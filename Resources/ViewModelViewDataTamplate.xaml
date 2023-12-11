@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controlPanelViewModels="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.ControlPanel"
+                    xmlns:controlPanelView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.ControlPanel"
+                    xmlns:schoolCitizensViewModels="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens"
+                    xmlns:schoolCitizensView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens"
+                    xmlns:schoolClassesViewModel="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses"
+                    xmlns:schoolClassesView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolClasses"
+                    xmlns:schoolSubjectsViewModel="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects"
+                    xmlns:schoolSubjectsView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolSubjects"
+                    xmlns:schoolOsztalyzatokViewModel="clr-namespace:KretaBasicSchoolSystem.Desktop.ViewModels.SchoolOsztalyzatok"
+                    xmlns:schoolOsztalyzatokView="clr-namespace:KretaBasicSchoolSystem.Desktop.Views.SchoolOsztalyzatok"
+
+                    >
+    <DataTemplate DataType="{x:Type controlPanelViewModels:ControlPanelViewModel}">
+        <controlPanelView:ControlPanelView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolCitizensViewModels:SchoolCitizensViewModel}">
+        <schoolCitizensView:SchoolCitizensView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolCitizensViewModels:StudentViewModel}">
+        <schoolCitizensView:StudentView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolClassesViewModel:SchoolClassesViewModel}">
+        <schoolClassesView:SchoolClassesView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolSubjectsViewModel:SchoolSubjectsViewModel}">
+        <schoolSubjectsView:SchoolSubjectsView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolCitizensViewModels:TeacherViewModel}">
+        <schoolCitizensView:TeacherView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolCitizensViewModels:ParentViewModel}">
+        <schoolCitizensView:ParentView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolOsztalyzatokViewModel:SchoolOsztalyzatokViewModel}">
+        <schoolOsztalyzatokView:SchoolOsztalyzatokView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolOsztalyzatokViewModel:AktualisOraViewModel}">
+        <schoolOsztalyzatokView:AktualisOraView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolOsztalyzatokViewModel:EvVegeZarasViewModel}">
+        <schoolOsztalyzatokView:EvVegeZarasView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolOsztalyzatokViewModel:FelevZarasViewModel}">
+        <schoolOsztalyzatokView:FelevZarasView/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type schoolOsztalyzatokViewModel:TanitottOsztalyokViewModel}">
+        <schoolOsztalyzatokView:TanitottOsztalyokView/>
+    </DataTemplate>
+
+</ResourceDictionary>
