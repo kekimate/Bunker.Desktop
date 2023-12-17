@@ -8,6 +8,6 @@ namespace KretaBasicSchoolSystem.Desktop.Models
 {
     public class EducationLevels
     {
-        public List<string> AllEducationLevels { get; } = new List<string> { "érettségi", "szakmai érettségi", "szakmai vizsga" };
+        public List<string> AllEducationLevels { get; } = new List<string> { "házhoz", "csomagpont", "személyes átvétel" };
     }
 }

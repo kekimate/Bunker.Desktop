@@ -32,14 +32,14 @@ namespace KretaBasicSchoolSystem.Desktop.Models
             FirstName = string.Empty;
             LastName = string.Empty;
             BirthsDay = new DateTime();
-            SchoolYear = 9;
+            SchoolYear = 1;
             SchoolClass = SchoolClassType.ClassA;
             EducationLevel = string.Empty;
         }
 
         public override string ToString()
         {
-            return $"{LastName} {FirstName} ({SchoolYear}.{SchoolClass}) - ({String.Format("{0:yyyy.MM.dd.}", BirthsDay)}) ({EducationLevel})";
+            return $"{LastName} {FirstName} ({String.Format("{0:yyyy.MM.dd.}", BirthsDay)}) ({EducationLevel})";
         }
     }
 }

@@ -67,32 +67,25 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         [RelayCommand]
         public void ShowSchoolCitizens()
         {
-            Caption = "Iskolapolgárok";
-            Icon = IconChar.UserGroup;
+            Caption = "Rendelés";
+            Icon = IconChar.HandPaper;
             CurrentChildView = _schoolCitizensViewModel;
         }
 
         [RelayCommand]
         public void ShowSchoolClasses()
         {
-            Caption = "Osztályok";
-            Icon = IconChar.ChalkboardUser;
+            Caption = "Itallap";
+            Icon = IconChar.Water;
             CurrentChildView = _schoolClassesViewModel;
         }
         [RelayCommand]
         public void ShowSchoolSubjects()
         {
-            Caption = "Tantárgyak";
-            Icon = IconChar.GraduationCap;
+            Caption = "Asztal foglalás";
+            Icon = IconChar.Table;
             CurrentChildView = _schoolSubjectsViewModel;
         }
 
-        [RelayCommand]
-        public void ShowOsztalyzatok()
-        {
-            Caption = "Osztályzatok";
-            Icon = IconChar.GraduationCap;
-            CurrentChildView = _schoolOsztalyzatokViewModel;
-        }
     }
 }
